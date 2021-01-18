@@ -5,7 +5,7 @@ A Pocketmine plugin to change the MOTD in-game using a ui
 ---
 
 ## HOW TO INSTALL
-* Step 1: Download the phar [MOTDUI](https://poggit.pmmp.io/r/51162/TempBanUI_dev-83.phar)
+* Step 1: Download the phar [MOTDUI](https://poggit.pmmp.io/r/113407/MOTD-UI_dev-1.phar)
 * Step 2: Put it on your plugins folder
 * Step 3: Download [FormAPI.phar](http://festyy.com/wHIglq)
 * Step 4: Put it on your plugins folder
