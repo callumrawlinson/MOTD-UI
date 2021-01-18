@@ -32,3 +32,9 @@ A Pocketmine plugin to change the MOTD in-game using a ui
 | --- | --- |
 | /motd   |  set.motd.perm |
 ---
+
+[![](https://poggit.pmmp.io/shield.state/MotdUI)](https://poggit.pmmp.io/p/MotdUI)
+<a href="https://poggit.pmmp.io/p/MotdUI"><img src="https://poggit.pmmp.io/shield.state/MotdUI"></a>
+
+[![](https://poggit.pmmp.io/shield.api/MotdUI)](https://poggit.pmmp.io/p/MotdUI)
+<a href="https://poggit.pmmp.io/p/MotdUI"><img src="https://poggit.pmmp.io/shield.api/MotdUI"></a>
