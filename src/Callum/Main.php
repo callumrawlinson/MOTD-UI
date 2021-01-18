@@ -13,13 +13,14 @@ use pocketmine\utils\Config;
 
 use Callum\Commands\Motd;
 
+
 class Main extends PluginBase implements Listener {
 
 	const PLUGIN_NAME = "MotdUI";
 
 	public function onEnable() {
 		$this->getLogger()->info("§aON");
-		$this->getServer()->getPluginManager()->registerEvents($this,$this);
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getServer()->getCommandMap()->register("motd", new Commands\Motd($this));
 	}
 
