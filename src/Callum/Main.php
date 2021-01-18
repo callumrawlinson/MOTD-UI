@@ -11,7 +11,7 @@ use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\Config;
 
-use DevAkya\Command\Motd;
+use Callum\Command\Motd;
 
 class Main extends PluginBase implements Listener {
 
