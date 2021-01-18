@@ -55,15 +55,15 @@ class Motd extends PluginCommand {
 			}
 			switch($result) {
 				case 0: // QUITTER
-					$sender->sendMessage(self::PREFIX . "§cMOTD has not been changed");
+		                 $sender->sendMessage(self::PREFIX . "§cMOTD has not been changed");
 				break;
 
 				case 1: // INFORMATION
-					$this->OpenInformation($sender);
+				 $this->OpenInformation($sender);
 				break;
 
 				case 2: // CHANGE MOTD
-					$this->ChangeMOTD($sender);
+				 $this->ChangeMOTD($sender);
 				break;
 			}
 		});
@@ -98,12 +98,8 @@ class Motd extends PluginCommand {
 			}
 		});
 		$form->setTitle(self::PREFIX);
-		$form->setContent(
-			" \n " .
-			" \n" .
-			"MOTD UI" .
-			"This will help you change the motd in game" .
-		);
+		$form->setContent("\n\n
+			"MOTD UI\n" . "This will help you change the motd in game");
 		$form->addButton("§cReturn");
 		$form->sendToPlayer($sender);
 	}
