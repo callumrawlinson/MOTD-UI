@@ -2,5 +2,7 @@ name: MotdUI
 version: 1.0.0
 api: 3.0.0
 main: Callum\Main
-author: CallumRawlinson
-website: https://github.com/callumrawlinson/MOTH-UI
+author:
+- callumRawlinson
+- CrowBaldeYT
+website: https://github.com/callumrawlinson/MOTD-UI
