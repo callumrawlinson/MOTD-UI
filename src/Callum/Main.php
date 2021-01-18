@@ -6,11 +6,15 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
-use pocketmine\plugin\PluginBase as Plugins;
+use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\Config;
-
+//Why this use??
+// @owner 
+// Y
+// |
+// °
 use DevAkya\Command\Motd;
 
 class Main extends PluginBase implements Listener {
@@ -19,7 +23,7 @@ class Main extends PluginBase implements Listener {
 
 	public function onEnable() {
 		$this->getLogger()->info("§aON");
-		$this->getServer()->getPluginManager()->registerEvents($this,$this);
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getServer()->getCommandMap()->register("motd", new Commands\Motd($this));
 	}
 
