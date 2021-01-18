@@ -13,7 +13,7 @@ use jojoe77777\FormAPI;
 use jojoe77777\FormAPI\SimpleForm;
 use jojoe77777\FormAPI\CustomForm;
 
-class Motd extends PluginCommand {
+class Motd extends Command {
 
 	const PREFIX = "§7[§6SET MOTD UI§7] ";
 	const DESCRIPTION = "Set a new MOTD";
@@ -36,17 +36,12 @@ class Motd extends PluginCommand {
 				$sender->sendMessage(self::PREFIX . "§cYou dont have permission");
 			}
 		} else {
-			$this->plugin->getLogger()->info("Error ...");
+			$this->getServer()->getLogger()->info("Error ...");
 		}
 	}
 
 	public function OpenMotdUI(Player $sender) {
 		$api = $this->plugin->getServer()->getPluginManager()->getPlugin("FormAPI");
-
-		if($api === null || $api->isDisabled()) {
-			return true;
-		}
-
 		$form = $api->createSimpleForm(function(Player $sender, $data) {
 			$result = $data;
 

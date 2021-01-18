@@ -10,12 +10,9 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\Config;
-//Why this use??
-// @owner 
-// Y
-// |
-// °
-use DevAkya\Command\Motd;
+
+use Callum\Commands\Motd;
+
 
 class Main extends PluginBase implements Listener {
 
