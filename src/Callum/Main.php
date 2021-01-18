@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener {
 	public function onEnable() {
 		$this->getLogger()->info("§aON");
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
-		$this->getServer()->getCommandMap()->register("motd", new Motd($this));
+		$this->getServer()->getCommandMap()->register("motd", new Commands\Motd($this));
 	}
 
 	public function onDisable() {
