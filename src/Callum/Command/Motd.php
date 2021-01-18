@@ -13,7 +13,7 @@ use jojoe77777\FormAPI;
 use jojoe77777\FormAPI\SimpleForm;
 use jojoe77777\FormAPI\CustomForm;
 
-class Motd extends PluginCommand {
+class Motd extends Command {
 
 	const PREFIX = "§7[§6SET MOTD UI§7] ";
 	const DESCRIPTION = "Set a new MOTD";
