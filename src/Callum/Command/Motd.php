@@ -93,8 +93,7 @@ class Motd extends Command {
 			}
 		});
 		$form->setTitle(self::PREFIX);
-		$form->setContent("\n\n
-			"MOTD UI\n" . "This will help you change the motd in game");
+		$form->setContent("\n\n" . "MOTD UI\n" . "This will help you change the motd in game");
 		$form->addButton("§cReturn");
 		$form->sendToPlayer($sender);
 	}
