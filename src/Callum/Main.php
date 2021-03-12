@@ -10,6 +10,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\utils\Config;
+use pocketmine\command\CommandMap;
 
 use Callum\Commands\Motd;
 
@@ -22,9 +23,5 @@ class Main extends PluginBase implements Listener {
 		$this->getLogger()->info("§aON");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getServer()->getCommandMap()->register("motd", new Commands\Motd($this));
-	}
-
-	public function onDisable() {
-		$this->getLogger()->info("§cOFF");
-	}
+        }
 }
